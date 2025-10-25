@@ -157,7 +157,7 @@ footer {
 }
 
 .activity-card .participants-list {
-  list-style: disc inside;
+  list-style: none; /* Hide bullet points */
   margin: 0;
   padding: 0;
   display: grid;
@@ -173,6 +173,33 @@ footer {
   border-bottom: 1px dashed #eee;
   color: #333;
   word-break: break-word;
+}
+
+/* Layout for participant row with delete button */
+.activity-card .participants-list .participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.activity-card .participants-list .participant-email {
+  flex: 1 1 auto;
+}
+
+.activity-card .participants-list .delete-btn {
+  background: #ffe8e6;
+  border: 1px solid #ffb3ac;
+  color: #b00020;
+  border-radius: 4px;
+  padding: 2px 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+.activity-card .participants-list .delete-btn:hover {
+  background: #ffd1cc;
 }
 
 .activity-card .participants-list li:last-child {
