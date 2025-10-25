@@ -142,3 +142,47 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* Participants section */
+.activity-card .participants-section {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+}
+
+.activity-card .participants-section h5 {
+  margin-bottom: 8px;
+  color: #1a237e;
+  font-size: 0.95rem;
+}
+
+.activity-card .participants-list {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+  max-height: 180px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+.activity-card .participants-list li {
+  padding: 4px 0;
+  border-bottom: 1px dashed #eee;
+  color: #333;
+  word-break: break-word;
+}
+
+.activity-card .participants-list li:last-child {
+  border-bottom: none;
+}
+
+.activity-card .participants-list .participants-empty {
+  list-style: none;
+  padding: 0;
+  border: none;
+  color: #666;
+  font-style: italic;
+}
