@@ -142,3 +142,74 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* Participants section */
+.activity-card .participants-section {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+}
+
+.activity-card .participants-section h5 {
+  margin-bottom: 8px;
+  color: #1a237e;
+  font-size: 0.95rem;
+}
+
+.activity-card .participants-list {
+  list-style: none; /* Hide bullet points */
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+  max-height: 180px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+.activity-card .participants-list li {
+  padding: 4px 0;
+  border-bottom: 1px dashed #eee;
+  color: #333;
+  word-break: break-word;
+}
+
+/* Layout for participant row with delete button */
+.activity-card .participants-list .participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.activity-card .participants-list .participant-email {
+  flex: 1 1 auto;
+}
+
+.activity-card .participants-list .delete-btn {
+  background: #ffe8e6;
+  border: 1px solid #ffb3ac;
+  color: #b00020;
+  border-radius: 4px;
+  padding: 2px 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+.activity-card .participants-list .delete-btn:hover {
+  background: #ffd1cc;
+}
+
+.activity-card .participants-list li:last-child {
+  border-bottom: none;
+}
+
+.activity-card .participants-list .participants-empty {
+  list-style: none;
+  padding: 0;
+  border: none;
+  color: #666;
+  font-style: italic;
+}
